@@ -1,3 +1,8 @@
+|||
+|---|---|
+|Node|v18.2.0|
+| framework|express|
+
 # PostGIS & Express
 
 Typescript porting of the great S2 Geometry library from Google
@@ -8,7 +13,11 @@ https://freddydumont.com/blog/prisma-postgis
 
 not sure how to see PostGIS filed in Prisma Studio.  You can check it in PGAdmin. 
 
-## Prisma ORM
+
+#### How to set up knex with PostGIS and knex-postgis
+https://www.codedaily.io/tutorials/Query-GPS-Coordinates-within-a-Radius-using-KnexJS-Postgres-and-the-PostGIS-Extension
+
+## Prisma ORM !!! oops.. I switched to Knex  But I will keep it in case
 ```
 npx prisma init: Initializes a new Prisma project.
 npx prisma migrate dev: Runs migrations in development mode.
@@ -34,3 +43,5 @@ terraform state list: Lists the resources saved in the Terraform state file.
 
 ### 🚨Note: When connecting to the database, specify the container name instead of localhost.
 
+
+docker volume ls and then docker volume rm <volume-name>
