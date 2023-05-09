@@ -13,9 +13,19 @@ https://freddydumont.com/blog/prisma-postgis
 
 not sure how to see PostGIS filed in Prisma Studio.  You can check it in PGAdmin. 
 
-
 #### How to set up knex with PostGIS and knex-postgis
 https://www.codedaily.io/tutorials/Query-GPS-Coordinates-within-a-Radius-using-KnexJS-Postgres-and-the-PostGIS-Extension
+
+
+## Knex
+```
+knex migrate:make <name>: Create a new migration file with the given name.
+knex migrate:latest: Run all pending migrations.
+knex migrate:rollback: Rollback the last batch of migrations.
+knex migrate:up <name>: Run the specified migration.
+knex migrate:down <name>: Rollback the specified migration.
+knex migrate:status: Show the status of all migrations.
+```
 
 ## Prisma ORM !!! oops.. I switched to Knex  But I will keep it in case
 ```
