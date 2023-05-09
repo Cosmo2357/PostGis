@@ -3,7 +3,7 @@
 |Node|v18.2.0|
 | framework|express|
 
-# PostGIS & Express
+# PostGIS & Express & React
 
 Typescript porting of the great S2 Geometry library from Google
 https://github.com/vekexasia/nodes2-ts
