@@ -3,10 +3,11 @@ import basicModel from '../models/basicModel';
 
 export default {
   getAll: (req: Request, res: Response, next: NextFunction): any => {
+    console.log('getAll')
 
-    const columns: string[] = ['name', 'price', 'id']
+    const columns: string[] = ['name', 'email', 'password']
 
-    basicModel.findAll('products', columns)
+    basicModel.findAll('users', columns)
       .then((result: any) => {
         console.log('result', result)
         return res.status(200).send(result);

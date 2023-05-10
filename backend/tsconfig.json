@@ -15,7 +15,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*", "src/api/v1/routes"],
+  "include": ["src/**/*", "src/api/v1/routes", "knexfile.ts", "migrations"],
   "exclude": ["dist", "node_modules"],
   "compileOnSave": false
 }

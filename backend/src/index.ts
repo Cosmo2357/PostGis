@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 import AllRoutes from "./api/v1/routes";
 const {exampleRouter } = AllRoutes;
-app.use('/v1/example', exampleRouter);
+app.use('/api/v1/example', exampleRouter);
 
 
 app.listen(port, () => {

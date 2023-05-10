@@ -2,7 +2,7 @@ import { config } from "dotenv";
 import { Knex } from "knex";
 
 interface KnexConfig {
-  [key: string ]: Knex.Config
+  [key: string]: Knex.Config
 }
 
 const configs: KnexConfig = {
@@ -10,9 +10,9 @@ const configs: KnexConfig = {
   development: {
     client: 'postgresql',
     connection: {
-      database: 'postgres',
-      user:     'postgres',
-      password: 'postgres'
+      database: 'mydb',
+      user: 'user',
+      password: 'password'
     },
     pool: {
       min: 2,
@@ -27,9 +27,9 @@ const configs: KnexConfig = {
   staging: {
     client: 'postgresql',
     connection: {
-      database: 'postgresql',
-      user:     'postgresql',
-      password: 'postgresql'
+      database: 'mydb',
+      user: 'user',
+      password: 'password'
     },
     pool: {
       min: 2,
@@ -45,7 +45,7 @@ const configs: KnexConfig = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
+      user: 'username',
       password: 'password'
     },
     pool: {
@@ -59,4 +59,4 @@ const configs: KnexConfig = {
 
 };
 
-export  default configs
+export default configs
