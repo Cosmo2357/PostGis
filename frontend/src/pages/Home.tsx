@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import '../i18n/config';
 import { useTranslation } from 'react-i18next';
 
-type HomeProps = {}
-
-function Home({ }: HomeProps) {
+function Home() {
   const { t } = useTranslation();
   return (
     <div>

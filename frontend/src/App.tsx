@@ -1,15 +1,18 @@
 import Router from './Router'
 
 import './App.css'
-import { ExampleProvider } from './context/index'
+import { ExampleProvider, UserProvider } from './context/index'
+
 
 function App() {
 
   return (
     <>
-      <ExampleProvider>
-        <Router />
-      </ExampleProvider>
+      <UserProvider>
+        <ExampleProvider>
+          <Router />
+        </ExampleProvider>
+      </UserProvider>
     </>
   )
 }

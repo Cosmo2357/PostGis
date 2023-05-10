@@ -22,7 +22,9 @@ const reducer = (state: typeof initialState, action: { type: string }) => {
 
 export const ExampleContext = createContext<ExampleContextType>({
   counter: initialState.counter,
-  incrementCounter: () => {},
+  incrementCounter: () => {
+    console.log('incrementCounter')
+  },
 });
 
 export const ExampleProvider = (props: Props) => {

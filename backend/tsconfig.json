@@ -15,7 +15,21 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*", "src/api/v1/routes", "knexfile.ts", "migrations"],
+  "esbuild": {
+    "external": [
+      "sqlite3",
+      "better-sqlite3",
+      "tedious",
+      "mysql2",
+      "pg-query-stream",
+      "mysql",
+      "pg-native",
+      "oracledb"
+    ]
+  },
+  "include": [
+    "src/**/*" /*  "src/api/v1/routes" , "knexfile.ts", "migrations" */
+  ],
   "exclude": ["dist", "node_modules"],
   "compileOnSave": false
 }
