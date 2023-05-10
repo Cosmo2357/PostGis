@@ -1,14 +1,15 @@
-import { useState } from 'react'
+import Router from './Router'
+
 import './App.css'
+import { ExampleProvider } from './context/index'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-   <h1 className="text-3xl font-bold underline bg-red-200 text-red-800">
-      Hello world!
-    </h1>
+      <ExampleProvider>
+        <Router />
+      </ExampleProvider>
     </>
   )
 }
