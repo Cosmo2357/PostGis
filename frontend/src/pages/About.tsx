@@ -6,9 +6,7 @@ import {
   useQuery,
 } from '@tanstack/react-query'
 
-
 export default function About() {
-
 
   const { data, isSuccess, isLoading, error } = useQuery({
      queryKey:['example'],
@@ -16,9 +14,7 @@ export default function About() {
     staleTime: 300000, // 5 分間
     onError: (error) => {
       console.log(error)
-    }
-  })
-
+    }})
 
   const { counter, incrementCounter } = useContext(ExampleContext);
 
